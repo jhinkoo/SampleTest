@@ -30,10 +30,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -138,8 +134,22 @@
                         <p>We offer deep expertise in strategic innovation, service design, build and operations services for next generation digital banking. We can ideate and deliver inventive propositions, bringing to life the customer journeys, operating and business models, and technical architecture.</p>
                     </div>
                     <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Exchange Currency ></a>
+                        <form action="#" method="post" onsubmit="return ValidationEvent()">
+                          <h2>Exchange Currency</h2>
+                          <br>
+                          <label>Currency :</label> <br>
+                          <input id="dollar" name="fromType" type="radio" value="dollar">
+                          <label>Dollar</label> <br>
+                          <input id="euro" name="fromType" type="radio" value="euro">
+                          <label>Euro</label> <br>
+                          <input id="rupee" name="fromType" type="radio" value="rupee">
+                          <label>Rupee</label> <br>                          
+                          <label>Amount :</label>
+                          <input id="amount" name="convertAmount" placeholder="Amount" type="text">
+                          <input type="submit" value="Submit">
+                        </form> 
                     </div>
+
                 </div>
             </div>
         </div>
@@ -231,6 +241,7 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
+
 	
 </body>
 
