@@ -134,18 +134,53 @@
                         <p>We offer deep expertise in strategic innovation, service design, build and operations services for next generation digital banking. We can ideate and deliver inventive propositions, bringing to life the customer journeys, operating and business models, and technical architecture.</p>
                     </div>
                     <div class="full paddding_left_15">
-                        <form action="#" method="post" onsubmit="return ValidationEvent()">
+                        <script src="js/test.js"></script>
+                        <form action="#" method="post" onsubmit="return AlertNow()">
                           <h2>Exchange Currency</h2>
                           <br>
-                          <label>Currency :</label> <br>
-                          <input id="dollar" name="fromType" type="radio" value="dollar">
-                          <label>Dollar</label> <br>
-                          <input id="euro" name="fromType" type="radio" value="euro">
-                          <label>Euro</label> <br>
-                          <input id="rupee" name="fromType" type="radio" value="rupee">
-                          <label>Rupee</label> <br>                          
+                          <table> 
+                            <tr>
+                              <td>
+                                <label>Currency From :&emsp;&emsp;&emsp; &emsp;&emsp;</label> <br>
+                              </td>
+                              <td>
+                                <label>Currency To :</label> <br>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input id="dollar" name="fromType" type="radio" value="dollar">
+                               <label>Dollar</label> 
+                              </td>
+                              <td>
+                                <input id="dollar" name="toType" type="radio" value="dollar">
+                               <label>Dollar</label> 
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input id="euro" name="fromType" type="radio" value="euro">
+                                <label>Euro</label> 
+                              </td>
+                              <td>
+                                <input id="euro" name="toType" type="radio" value="euro">
+                                <label>Euro</label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input id="rupee" name="fromType" type="radio" value="rupee">
+                                <label>Rupee</label> 
+                              </td>
+                              <td>
+                                <input id="rupee" name="toType" type="radio" value="rupee">
+                                <label>Rupee</label> 
+                              </td>
+                            </tr>
+                          </table>
                           <label>Amount :</label>
                           <input id="amount" name="convertAmount" placeholder="Amount" type="text">
+                          <br>
                           <input type="submit" value="Submit">
                         </form> 
                     </div>
